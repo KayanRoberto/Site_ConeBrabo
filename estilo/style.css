@@ -86,22 +86,25 @@ margin-top: 60px;
   }
   
   /* Personalizações individuais */
+  /* marrom brigadeiro */
   .sabor-card.brigadeiro .sabor-imagem {
-    background-color: #4b2e2e; /* marrom brigadeiro */
-    background-image: url(imagens/cone-c) ;
+    background-color: #4b2e2e; 
+    background-image: url() ;
   }
   
+  /* bege doce de leite */
   .sabor-card.doceleite .sabor-imagem {
-    background-color: #d8b48f; /* bege doce de leite */
+    background-color: #d8b48f; 
   }
   
+  /* Nutella style */
   .sabor-card.nutella .sabor-imagem {
     background-color: #5c4033; /* Nutella style */
   }
   
   .sabor-card h3 {
     padding: 0.8rem 1rem 0 1rem;
-    color: var(--azul);
+    color: white;
   }
   
   .sabor-card p {
