@@ -1,27 +1,28 @@
 @charset "UTF-8";
 
-/*Variaveis*/
+/* --------------Variaveis------------------- */
 :root{
     --azul: #1e90ff;
     --bege: #dfceb8;
     --branco: #ffffff;
     --preto: #111; 
 }
-
+/* ------------------------------------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*-------------------BODY---------------------*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--branco);
     color: var(--preto);
     line-height: 1.6;
 }
+/*--------------------------------------------*/
 
-/*Cabeçalho*/
+/*----------------Cabeçalho-------------------*/
 header{
     position: fixed;
     width: 100%;
@@ -34,7 +35,9 @@ header{
     align-items: center;
     z-index: 1000;
 }
+/* ------------------------------------------- */
 
+/* ------------------NAV---------------------- */
 nav  ul{
     list-style: none;
     display: flex;
@@ -47,6 +50,8 @@ nav a{
     font-weight: bold;
 }
 
+
+/* -----------------SECTION--------------------- */
 /*Seções*/
 section{
 padding: 100px 20px;
@@ -86,20 +91,22 @@ margin-top: 60px;
   }
   
   /* Personalizações individuais */
-  /* marrom brigadeiro */
+
+  /* brigadeiro */
   .sabor-card.brigadeiro .sabor-imagem {
     background-color: #4b2e2e; 
     background-image: url() ;
   }
   
-  /* bege doce de leite */
+  /* doce de leite */
   .sabor-card.doceleite .sabor-imagem {
     background-color: #d8b48f; 
+    background-image: url();
   }
   
   /* Nutella style */
   .sabor-card.nutella .sabor-imagem {
-    background-color: #5c4033; /* Nutella style */
+    background-color: #5c4033; 
   }
   
   .sabor-card h3 {
@@ -120,16 +127,29 @@ margin-top: 60px;
   }
 
 
-  /**/
+  
 section:nth-child(even) {
     background-color: var(--bege);
   }
-
+/* ---------------------H2----------------------- */
 h2{
     margin-bottom: 1rem;
     color: var(--azul);
 }
 
+/* ---------------------------------------------- */
+
+
+/* ------------------A:HOVER--------------------- */
 a:hover{
     text-decoration: underline;
+}
+/* ---------------------------------------------- */
+
+/* -----------------FOOTER----------------------- */
+footer{
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 3px;
 }
