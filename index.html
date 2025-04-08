@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cone Brabo</title>
+    <link rel="shortcut icon" href="Favicon ConeBrabo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <nav>
+            <h1>Cone Brabo</h1>
+        </nav>
+    
+    <ul>
+        <li><a href="#cardápio">Cardápio</a></li>
+        <li><a href="#Sabores">Sabores</a></li>
+        <li><a href="#promocoes">Promoções</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobreNos">Sobre Nós</a></li>
+    </ul>
+    </header>
+
+    <!--Seção de Cardápio-->
+    <section id="cardapio">
+        <h2>Cardápio</h2>
+    </section>
+
+    <!--Seção de Sabores-->
+    <section id="sabores">
+        <h2>Sabores</h2>
+        <div class="sabores-container">
+      
+          <div class="sabor-card brigadeiro">
+            <div class="sabor-imagem">
+              <!-- imagem ou fundo personalizado -->
+            </div>
+            <h3>Brigadeiro Brabo</h3>
+            <p>Recheado com brigadeiro caseiro, pedaços de chocolate e cobertura de ganache.</p>
+            <span>R$ 8,00</span>
+          </div>
+      
+          <div class="sabor-card doceleite">
+            <div class="sabor-imagem">
+              <!-- imagem ou fundo personalizado -->
+            </div>
+            <h3>Doce de Leite Supreme</h3>
+            <p>Doce de leite cremoso com crocante de castanha e cobertura de leite ninho.</p>
+            <span>R$ 9,00</span>
+          </div>
+      
+          <div class="sabor-card nutella">
+            <div class="sabor-imagem">
+              <!-- imagem ou fundo personalizado -->
+            </div>
+            <h3>Nutella Power</h3>
+            <p>Camadas generosas de Nutella, morango fresco e granulados belgas.</p>
+            <span>R$ 10,00</span>
+          </div>
+      
+        </div>
+      </section>
+
+    <!--Seção de Promoções-->
+    <section id="promocoes">
+        <h2>Promoções</h2>
+    </section>
+
+    <!--Seção de Promoções-->
+    <section id="contato">
+        <h2>Contato</h2>
+        <a href="https://www.instagram.com/conebrabo/">Nosso instagram</a>
+    </section>
+
+    <!--Seção de Sobre nós-->
+    <section id="sobrenos">
+        <h2>Sobre Nós</h2>
+        <p>O Cone Brabo nasceu da vontade de entregar um doce pesado, gostoso e brabo de verdade!</p>
+    </section>
+</body>
+<script>
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*Variaveis*/
+:root{
+    --azul: #1e90ff;
+    --bege: #dfceb8;
+    --branco: #ffffff;
+    --preto: #111; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--branco);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+/*Cabeçalho*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav  ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+}
+
+/*Seções*/
+section{
+padding: 100px 20px;
+margin-top: 60px;
+}
+
+/*Seção de sabores*/
+/* Estilo da seção de sabores */
+#sabores {
+    padding: 100px 20px;
+    background-color: var(--branco);
+  }
+  
+  .sabores-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .sabor-card {
+    background-color: var(--bege);
+    border: 2px solid var(--azul);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .sabor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .sabor-imagem {
+    height: 150px;
+    background-color: #ddd;
+  }
+  
+  /* Personalizações individuais */
+  .sabor-card.brigadeiro .sabor-imagem {
+    background-color: #4b2e2e; /* marrom brigadeiro */
+    background-image: url(imagens/cone-c) ;
+  }
+  
+  .sabor-card.doceleite .sabor-imagem {
+    background-color: #d8b48f; /* bege doce de leite */
+  }
+  
+  .sabor-card.nutella .sabor-imagem {
+    background-color: #5c4033; /* Nutella style */
+  }
+  
+  .sabor-card h3 {
+    padding: 0.8rem 1rem 0 1rem;
+    color: var(--azul);
+  }
+  
+  .sabor-card p {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .sabor-card span {
+    display: block;
+    padding: 0.5rem 1rem 1rem;
+    font-weight: bold;
+    color: #222;
+  }
+
+
+  /**/
+section:nth-child(even) {
+    background-color: var(--bege);
+  }
+
+h2{
+    margin-bottom: 1rem;
+    color: var(--azul);
+}
+
+a:hover{
+    text-decoration: underline;
+}
